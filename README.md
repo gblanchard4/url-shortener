@@ -5,4 +5,6 @@ URL Shortener
 
 ## What Did I Do!?
 * I want to use Material Design instead of Bootstrap
-	* 
+	* Added `material.min.js` to `vendor/assets/javascripts/` and edited `app/assets/javascripts/application.js` with `//= require  material.min.js`
+	* Added `material.min.css` to `vendor/assets/stylesheets/` and 
+	edited `app/assets/stylesheets/application.css` with `*= require bootstrap.min`
