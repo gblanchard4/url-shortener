@@ -47,5 +47,9 @@ URL Shortener
 * Modify `config/routes.rb` to add slug and home routes
 * Add `gem 'will_paginate', '~> 3.0'`
 * Create `app/views/layouts/_new_link.html.erb`
+* Modify `app/views/layouts/application.html.erb` and add MDL container
+* Modify `app/views/links/_form.html.erb` and add some MDL flare
+* Create `app/views/links/create.js.erb` to append new short link back to page
+
 
 
