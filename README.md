@@ -61,3 +61,4 @@ URL Shortener
 * Fire up `rails server`
 	* Getting a JQuery 500 I believe due to Redis not being installed after looking into the logfiles
 	* (Install Redis)[https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis]
+* Add `config/initializers/imgkit.rb`
