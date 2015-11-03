@@ -23,4 +23,14 @@ URL Shortener
 * At this point I *probably* should have realized I already needed to create my database
 	* Edit the `config/databse.yml` and `rake db:create`
 * Add the `generate_slug` function to `app/models/link.rb` 
-* Add the gem `figaro` to the Gemfile and `bundle install`
+* Figaro
+	* Add the gem `figaro` to the Gemfile and `bundle install`
+	* Add `BASE_URL: 'http://gebiv.com/'` to `config/application.yml`
+	* Add `display_slug` method to `app/models/link.rb`
+* Screenshot the websites
+	* Add the following gems:
+		* `gem 'imgkit'`
+		* `gem 'carrierwave'`
+		* `gem "fog", "~> 1.3.1"`
+		* `gem 'mechanize'`
+		* `gem 'sidekiq'`

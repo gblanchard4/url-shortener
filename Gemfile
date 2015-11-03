@@ -26,6 +26,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Add Figaro
 gem 'figaro'
 
+# Screenshots
+gem 'imgkit'
+gem 'carrierwave'
+gem "fog", "~> 1.3.1"
+gem 'mechanize'
+gem 'sidekiq'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
