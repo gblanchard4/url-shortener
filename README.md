@@ -38,5 +38,6 @@ URL Shortener
 	* Add `screenshot_scrape` to `app/models/link.rb`
 	* Add `after_create` callback to take screenshot and generate the link to `app/models/link.rb`
 	* `mkdir app/workers` for worker classes
-	
+	* Create `screenshot.rb` and `scrape.rb` in `app/workers`
+* Create CarrierWave initilization file	
 
