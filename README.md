@@ -36,3 +36,5 @@ URL Shortener
 		* `gem 'sidekiq'`
 	* Created my S3 bucket and keys
 	* Add `screenshot_scrape` to `app/models/link.rb`
+	* Add `after_create` callback to take screenshot and generate the link to `app/models/link.rb`
+

@@ -1,4 +1,5 @@
 class Link < ActiveRecord::Base
+	after_create :generate_slug, :screenshot_scrape
 	
 	def generate_slug
 		self.slug = self.id.to_s(36)
