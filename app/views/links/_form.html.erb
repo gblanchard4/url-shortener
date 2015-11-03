@@ -1,7 +1,8 @@
 <%= form_for(@link, remote: true) do |f| %>
   <% if @link.errors.any? %>
+  <div class="mdl-card__actions mdl-card--border">
     <div id="error_explanation">
-      <h2><%= pluralize(@link.errors.count, "error") %> prohibited this link from being saved:</h2>
+      <h3><%= pluralize(@link.errors.count, "error") %> prohibited this link from being saved:</h3>
 
       <ul>
       <% @link.errors.full_messages.each do |message| %>
@@ -9,14 +10,13 @@
       <% end %>
       </ul>
     </div>
+  </div>
   <% end %>
-  <div>
-    <%= link_to image_tag("logo.png"), root_path %>
-  </div>
-  <div class="field">
-    <%= f.text_field :given_url, :class => "mdl-textfield mdl-js-textfield", :placeholder => "Paste a link to shorten" %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Shorten Me', :class => "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"%>
-  </div>
+
+    <div class="mdl-card__title mdl-card--expand">
+      <h4><%= f.text_field :given_url, :class => "mdl-textfield mdl-js-textfield", :placeholder => "Paste a link to shorten" %></h4>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <%= f.submit 'Shorten Me', :class => "mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect"%>
+    </div>
 <% end %>

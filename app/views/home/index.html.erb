@@ -1,0 +1,30 @@
+<div class="mdl-grid">
+	<div class="mdl-cell mdl-cell--12-col"
+		<div class="title">
+			<h1>Trending links</h1>
+		</div>
+	</div>
+</div>
+<div class="mdl-grid">
+		<% @top_links.each do |link| %>
+		<div class="mdl-cell mdl-cell--8-col">
+			<div class="shorten-card mdl-card mdl-shadow--2dp">
+				<% if link.snapshot %>
+				<div class="screenshot-outer"><%= link_to image_tag(link.snapshot.url, class: "screenshot"), link %></div>
+				<% end %>
+				<div class="mdl-card__title mdl-card--expand">
+					<div class="mdl-card__title-text"?
+					<p class="title"><%= truncate(link.title, length: 60) %></p>
+					</div>
+				</div>
+				<p class="short_url"><%= link_to link.display_slug, link.slug, target: '_blank' %></p>
+				<ul class="click_time">
+					<li><span class="badge"><span class="clicks"><%= link.clicks %></span></span> clicks</li>
+					<li><span class="time"><%= time_ago_in_words(link.created_at) %> ago</span></li>
+				</ul>
+				<p class="long_url"><%= link_to truncate(link.given_url, length: 60), link.given_url %></p>
+			</div>
+		</div>	
+		<% end %>
+		<p class="bottom_nav"><%= link_to 'See all of the links', '/all' %></p>
+</div>

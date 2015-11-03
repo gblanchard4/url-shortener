@@ -53,4 +53,11 @@ URL Shortener
 * Modify `app/views/links/show.html.erb` (will add MDL flare later)
 * JQuery URL Validation
 	* Add `gem 'jquery-validation-rails'`
-	* Add validator javascript to `/app/assets/javascripts/application.js`
+	* Add validator javascript to `app/assets/javascripts/application.js`
+* Create `app/views/home/index.html.erb` and `app/views/home/all.html.erg` pages
+* Add custom CSS to `app/assets/stylesheets/application.css`
+
+## Trying it out
+* Fire up `rails server`
+	* Getting a JQuery 500 I believe due to Redis not being installed after looking into the logfiles
+	* (Install Redis)[https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis]

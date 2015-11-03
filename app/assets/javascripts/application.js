@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require  material.min.js
+//= require material.min
 //= require jquery.validate
 //= require jquery.validate.additional-methods
 
