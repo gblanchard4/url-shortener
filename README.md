@@ -43,7 +43,9 @@ URL Shortener
 * Create `app/uploaders/snapshot_uploader.rb` for Heroku permissions
 	* 	Add `mount_uploader :snapshot, SnapshotUploader` to `app/models/link.rb`
 * Update `controllers/links_controller.rb` to remove the delete,edit,index, and destroy actions
-* Modify `config/routes.rb` to add slig and home routes
-
+* Generate home controller
+* Modify `config/routes.rb` to add slug and home routes
+* Add `gem 'will_paginate', '~> 3.0'`
+* Create `app/views/layouts/_new_link.html.erb`
 
 
