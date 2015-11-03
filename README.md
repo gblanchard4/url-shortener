@@ -34,4 +34,5 @@ URL Shortener
 		* `gem "fog", "~> 1.3.1"`
 		* `gem 'mechanize'`
 		* `gem 'sidekiq'`
-	* Created my S3 bucket 
+	* Created my S3 bucket and keys
+	* Add `screenshot_scrape` to `app/models/link.rb`

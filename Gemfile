@@ -29,7 +29,7 @@ gem 'figaro'
 # Screenshots
 gem 'imgkit'
 gem 'carrierwave'
-gem "fog", "~> 1.3.1"
+gem "fog"
 gem 'mechanize'
 gem 'sidekiq'
 
