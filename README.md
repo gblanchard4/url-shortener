@@ -51,6 +51,6 @@ URL Shortener
 * Modify `app/views/links/_form.html.erb` and add some MDL flare
 * Create `app/views/links/create.js.erb` to append new short link back to page
 * Modify `app/views/links/show.html.erb` (will add MDL flare later)
-
-
-
+* JQuery URL Validation
+	* Add `gem 'jquery-validation-rails'`
+	* Add validator javascript to `/app/assets/javascripts/application.js`
