@@ -41,5 +41,6 @@ URL Shortener
 	* Create `screenshot.rb` and `scrape.rb` in `app/workers`
 * Create CarrierWave initilization file	in `config/initializers`
 * Create `app/uploaders/snapshot_uploader.rb` for Heroku permissions
+	* 	Add `mount_uploader :snapshot, SnapshotUploader` to `app/models/link.rb`
 
 
