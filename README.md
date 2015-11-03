@@ -34,3 +34,4 @@ URL Shortener
 		* `gem "fog", "~> 1.3.1"`
 		* `gem 'mechanize'`
 		* `gem 'sidekiq'`
+	* Created my S3 bucket 
