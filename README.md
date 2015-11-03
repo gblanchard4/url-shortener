@@ -17,4 +17,6 @@ URL Shortener
 			* `clicks` -> integer
 			* `snapshot` -> string
 			* `title` -> string
-	
+	* Change default value for `clicks` in the migration file to `0` since you cant increment a non-integer value (nil)
+		* Edit `db/migrate/20151103022420_create_links.rb` by modifying `t.integer :clicks` with a  `:default => 0`
+	* Migrate the database with `rake db:migrate`
