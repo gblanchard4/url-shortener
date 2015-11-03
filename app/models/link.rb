@@ -1,4 +1,5 @@
 class Link < ActiveRecord::Base
+	mount_uploader :snapshot, SnapshotUploader
 	after_create :generate_slug, :screenshot_scrape
 	
 	def generate_slug
