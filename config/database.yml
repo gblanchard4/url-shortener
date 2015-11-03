@@ -20,6 +20,9 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  host: localhost
+  username: pguser
+  password: pguser
 
 development:
   <<: *default
@@ -81,5 +84,5 @@ test:
 production:
   <<: *default
   database: url-shortener_production
-  username: url-shortener
+  username: pguser
   password: <%= ENV['URL-SHORTENER_DATABASE_PASSWORD'] %>
