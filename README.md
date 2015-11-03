@@ -42,5 +42,6 @@ URL Shortener
 * Create CarrierWave initilization file	in `config/initializers`
 * Create `app/uploaders/snapshot_uploader.rb` for Heroku permissions
 	* 	Add `mount_uploader :snapshot, SnapshotUploader` to `app/models/link.rb`
+* Update `controllers/links_controller.rb` to remove the delete,edit,index, and destroy actions
 
 
