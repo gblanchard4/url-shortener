@@ -20,3 +20,7 @@ URL Shortener
 	* Change default value for `clicks` in the migration file to `0` since you cant increment a non-integer value (nil)
 		* Edit `db/migrate/20151103022420_create_links.rb` by modifying `t.integer :clicks` with a  `:default => 0`
 	* Migrate the database with `rake db:migrate`
+* At this point I *probably* should have realized I already needed to create my database
+	* Edit the `config/databse.yml` and `rake db:create`
+* Add the `generate_slug` function to `app/models/link.rb` 
+* Add the gem `figaro` to the Gemfile and `bundle install`
